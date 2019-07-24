@@ -1017,7 +1017,7 @@ if isdir(binary_deps_path):
                 join(root.replace(binary_deps_path, 'binary_deps'), fname))
 
 
-def glob_paths(*patterns, excludes=('.pyc', )):
+def glob_paths(patterns, excludes=('.pyc', )):
     files = []
     base = Path(join(src_path, 'kivy'))
 
